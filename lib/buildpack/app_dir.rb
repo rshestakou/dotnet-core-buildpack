@@ -61,7 +61,8 @@ module AspNetCoreBuildpack
       if msbuild?(@dir)
         msbuild_projects
       elsif project_json?(@dir)
-        with_project_json
+        #with_project_json
+        []
       else
         []
       end
